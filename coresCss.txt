@@ -1,5 +1,0 @@
---cinza_claro { #c9d1d3 }
---branco { #f7f7f7 }
---verde_ceu { #9dd3df }
---preto_grafite { #3b3737 }
---vermelho_blond { #991818 }
