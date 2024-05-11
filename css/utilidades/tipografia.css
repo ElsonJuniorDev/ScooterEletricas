@@ -53,4 +53,18 @@
     font:600 4rem/1.25 "Poppins" , sans-serif;
 }
 
+/*--------------Cores----------------*/
 
+.cor-laranja{
+    color: var(--laranja);
+}
+.cor-azul{
+    color: var(--azul);
+}
+.cor-amarelo-light{
+    color: var(--amarelo-light);
+}
+
+.cor-prata{
+    color:#9ba4ac;
+}

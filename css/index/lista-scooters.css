@@ -3,25 +3,21 @@
     padding-bottom:120px;   
     
 }
-.container{
+.container-scooters{
     max-width: 1400px;
     display: flex;
     gap: 40px;    
     padding: 0 20px 20px 20px;       
-    margin-left: auto;
-    margin-right: auto;
-    overflow: scroll;
-    overflow-x: auto;  
+   
+    flex-wrap: wrap;
+
+    
+   
 }
 
 
 .lista-scooters h2{
-
-    max-width: 1200px;
-    padding-left:20px;
-    padding-right:20px;       
-    margin-left: auto;
-    margin-right: auto;
+   
     margin-bottom: 40px;
     color: var(--azul); 
    
@@ -29,12 +25,12 @@
 .lista-scooters h2 span{
     color: var(--laranja-claro);
 }
-.container h3{
+.container-scooters h3{
     display: flex;
     margin-bottom: 8px;
     align-items: center;
 }
-.container h3::before{
+.container-scooters h3::before{
     display: inline-block;
   
     content:"";
@@ -44,30 +40,38 @@
     background-color: var(--laranja-claro);
     transition: 0.2s;
 }
-.container a:hover h3::before{
+.container-scooters a:hover h3::before{
     width: 24px;
 }
-.container li{
+.container-scooters li{
     flex: 1;
     min-width: 280px;
 }
-.container li span{
+.container-scooters li span{
     padding-left: 20px;
 }
-.container img{
-
+.container-scooters img{
+    max-width: 280px;
     margin-bottom: 16px;
 }
-.container a{
+.container-scooters a{
     display: block;
 }
 
 /*---------MediaQueriesLista-Scooters*/
+
+    
 @media (max-width:800px){
+    .container-scooters{
+        overflow: scroll;
+        overflow-x: auto;  
+        flex-wrap: nowrap;
+    }
+   
     .lista-scooters{       
         padding-bottom: 60px;
     }   
-    .container ul{
+    .container-scooters ul{
         gap: 20px;
         
     }
