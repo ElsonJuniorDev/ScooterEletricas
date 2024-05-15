@@ -66,5 +66,9 @@
 }
 
 .cor-prata{
-    color:#9ba4ac;
+   color: var(--prata);
 }
+.cor-branco-gelo{
+    color: var(--branco-gelo);
+ }
+ 

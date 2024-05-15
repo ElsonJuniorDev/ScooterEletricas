@@ -27,3 +27,24 @@
     font-size: 1rem;
   }
 }
+
+/*Titulos paginas internas*/
+
+.titulo-bg {
+  background-color: var(--azul);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.titulo p {
+  margin-bottom: 4px;
+  color : #fff;
+}
+
+@media (max-width: 800px) {
+  .titulo-bg {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-transform: lowercase;
+    font-weight: 400;
+  }
+}
