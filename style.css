@@ -3,15 +3,12 @@
 @import url(./css/utilidades/componentes.css);
 @import url(./css/global/global.css);
 
-
 @import url(./css/global/header.css);
-
-
 
 @import url(./css/index/introducao.css);
 @import url(./css/index/lista-scooters.css);
 @import url(./css/index/seguro.css);
-
+@import url(./css/global/footer.css);
 
 
 :root {
@@ -23,8 +20,5 @@
   --laranja-light: #fc6b0a;
   --laranja-claro: #fc8d4d;
   --branco-gelo: #f7f7f7;
+  --prata: #9ba4ac;
 }
-
-
-
-

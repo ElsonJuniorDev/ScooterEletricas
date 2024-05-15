@@ -1,66 +1,68 @@
-.seguro-bg{
-    background-color: var(--azul);
+.seguro-bg {
+  background-color: var(--azul);
 }
-.seguro{
-   padding-top: 60px;
-   padding-bottom: 60px;
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   gap:40px;
-   align-items: center;
-   
+.seguro {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
 }
 
-.seguro h2{
-    color:var(--branco-gelo);
+.seguro h2 {
+  color: var(--branco-gelo);
+  grid-column: 1/-1;
+}
+
+.seguros-itens {
+  background-color: var(--branco-gelo);
+  padding: 32px 32px 32px 60px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  border-radius: 4px;
+}
+.seguros-itens h3 {
+  margin-bottom: 40px;
+}
+.seguros-itens span {
+  grid-column: 2;
+  display: block;
+  text-align: right;
+}
+
+.seguros-itens ul {
+  grid-column: 1/-1;
+  margin-bottom: 32px;
+}
+.seguros-itens li {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.seguros-itens li::before {
+  display: inline-block;
+  content: "";
+  width: 12px;
+  height: 8px;
+  margin-right: 8px;
+  background-color: var(--laranja-claro);
+  position: absolute;
+  left: -21px;
+}
+
+.seguros-itens li + li {
+  margin-top: 20px;
+}
+.seguros-itens a {
     grid-column: 1/-1;
-}
 
-
-.container-classes-seguro{
-    background-color: var(--branco-gelo);
-    padding: 32px 32px 32px 60px;
-    display: grid;
-    grid-template-columns: 1fr auto;
-    border-radius: 4px;
-
-}
-.container-classes-seguro h3{
-    margin-bottom: 40px;
-}
-.container-classes-seguro span{
-    grid-column: 2;
-    display: block;
-    text-align: right;
-}
-
-.container-classes-seguro ul {
-    grid-column: 1/-1;
-    margin-bottom: 32px;
-}
-.container-classes-seguro li {
-    display: flex;
-    align-items: center;
-    position: relative;
-}
-.container-classes-seguro li::before{
-    content: "";
-    display: inline-block;
-    width: 20px;
-    height: 24px;
-    background-image: url(../../img/double-right.svg);
-    position: absolute;
-    left: -21px;
-}
-
-.container-classes-seguro li + li{
-    margin-top: 20px;
 }
 
 /*----------MediaQuetys----------*/
 
-@media(max-width:800px){
-    .seguro{
-        grid-template-columns: 1fr;
-    }
+@media (max-width: 800px) {
+  .seguro {
+    grid-template-columns: 1fr;
+  }
 }
